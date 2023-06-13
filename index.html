@@ -1,0 +1,90 @@
+a<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>qwe</title>
+	<link rel="icon" href="./favicon.png" type="image/gif">
+	<style>
+		body {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"
+		type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+		type="text/javascript"></script>
+	<script src="Script.js"></script>
+	<style>
+		@font-face {
+			font-family: 'Roboto';
+			src: url(fonts/Roboto-Regular.ttf);
+		}
+
+		@font-face {
+			font-family: 'Roboto';
+			font-weight: 300;
+			src: url(fonts/Roboto-Light.ttf);
+		}
+
+		@font-face {
+			font-family: 'Roboto';
+			font-weight: 500;
+			src: url(fonts/Roboto-Medium.ttf);
+		}
+
+		/* Contextmenu CSS kodu */
+		#contextmenu {
+			display: none;
+			position: absolute;
+			background-color: #2b2f33;
+			/* arkaplan rengi */
+			border-radius: 4px;
+			border: none;
+			width: 120px;
+			z-index: 999999;
+		}
+
+		#contextmenu ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		#contextmenu li {
+			padding: 8px 10px;
+			cursor: pointer;
+			color: #fff;
+			/* metin rengi */
+		}
+
+		#contextmenu li:hover {
+			background-color: #3e4347;
+			border-radius: 4px;
+			/* hover rengi */
+		}
+	</style>
+
+	<!-- Contextmenu HTML kodu -->
+	<div id="contextmenu">
+		<ul>
+			<li id="editButton">Edit</li>
+			<li id="copyButton">Copy</li>
+			<li id="cutButton">Cut</li>
+			<li id="pasteButton">Paste</li>
+			<li id="saveImageButton">Save Image</li>
+		</ul>
+	</div>
+
+</body>
+
+</html>
